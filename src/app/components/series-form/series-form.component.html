@@ -1,0 +1,76 @@
+<div>
+  <div class="submit-form">
+    <div *ngIf="!submitted">
+      <div class="form-group">
+        <label for="name">Nom</label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          required #name="ngModel"
+          [(ngModel)]="ws.name"
+          name="name"
+        />
+      </div>
+      <div [hidden]="!name.pristine" class="alert alert-danger">Le nom est obligatoire</div>
+
+      <div class="form-group">
+        <label for="desc">Description</label>
+        <input
+          class="form-control"
+          id="desc"
+          required #desc="ngModel"
+          [(ngModel)]="ws.desc"
+          name="desc"
+        />
+      </div>
+      <div [hidden]="!desc.pristine" class="alert alert-danger">La description est obligatoire</div>
+
+
+      <div class="form-group">
+        <label for="startDate">Date de début</label>
+        <input
+          type="date"
+          class="form-control"
+          id="startDate"
+          required #startDate="ngModel"
+          [(ngModel)]="ws.startDate"
+          name="startDate"
+        />
+      </div>
+      <div [hidden]="!startDate.pristine" class="alert alert-danger">La date de début est obligatoire</div>
+
+      <div class="form-group">
+        <label for="endDate">Date de fin</label>
+        <input
+          type="date"
+          class="form-control"
+          id="endDate"
+          [(ngModel)]="ws.endDate"
+          name="endDate"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="link">Lien</label>
+        <input
+          type="url"
+          class="form-control"
+          id="link"
+          required #link="ngModel"
+          [(ngModel)]="ws.link"
+          name="link"
+        />
+      </div>
+      <div [hidden]="!link.pristine" class="alert alert-danger">Le lien est obligatoire</div>
+
+
+      <button (click)="addWebSeries()" class="btn btn-success">Submit</button>
+    </div>
+
+    <div *ngIf="submitted">
+      <h4>Série web ajouté avec succès</h4>
+      <button class="btn btn-success" (click)="newWebSeries()">Add</button>
+    </div>
+  </div>
+</div>
