@@ -1,3 +1,4 @@
+
 export class WebSeries {
   id?: string;
   name?: string;
@@ -5,4 +6,5 @@ export class WebSeries {
   startDate?: Date;
   endDate?: Date;
   link?: string;
+  nbEpisodes?: number;
 }

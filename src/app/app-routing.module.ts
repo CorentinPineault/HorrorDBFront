@@ -4,12 +4,16 @@ import { SeriesListComponent } from "./components/series-list/series-list.compon
 import { SeriesFormComponent } from "./components/series-form/series-form.component";
 import { SeriesOverviewComponent } from "./components/series-overview/series-overview.component";
 import { FrontpageComponent } from "./components/frontpage/frontpage.component";
+import { WebFormComponent } from './components/web-form/web-form.component';
+import { WebListComponent } from './components/web-list/web-list.component';
 
 const routes: Routes = [
   { path: '', component: FrontpageComponent},
+  { path: 'web', component: WebListComponent },
   { path: 'webseries', component: SeriesListComponent },
   { path: 'webseries/:id', component: SeriesOverviewComponent },
-  { path: 'add', component: SeriesFormComponent }
+  { path: 'addWeb', component: WebFormComponent },
+  { path: 'addSeries', component: SeriesFormComponent }
 ];
 
 @NgModule({
