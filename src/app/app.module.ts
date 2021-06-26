@@ -9,6 +9,8 @@ import { SeriesFormComponent } from './components/series-form/series-form.compon
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import { FrontpageComponent } from './components/frontpage/frontpage.component';
+import { AddFormComponent } from './add-form/add-form.component';
+import { WebListComponent } from './web-list/web-list.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { FrontpageComponent } from './components/frontpage/frontpage.component';
     SeriesOverviewComponent,
     SeriesListComponent,
     SeriesFormComponent,
-    FrontpageComponent
+    FrontpageComponent,
+    AddFormComponent,
+    WebListComponent
   ],
   imports: [
     BrowserModule,
