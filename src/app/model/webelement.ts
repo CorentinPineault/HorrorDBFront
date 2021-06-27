@@ -1,4 +1,4 @@
-export class Webelement {
+export class WebElement {
     id?: string;
     name?: string;
     desc?: string;

@@ -12,17 +12,21 @@ import { FrontpageComponent } from './components/frontpage/frontpage.component';
 import { WebListComponent } from './components/web-list/web-list.component';
 import { TagFormComponent } from './components/tag-form/tag-form.component';
 import { WebFormComponent } from './components/web-form/web-form.component';
+import { TagListComponent } from './components/tag-list/tag-list.component';
+import { WebOverviewComponent } from './components/web-overview/web-overview.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    FrontpageComponent,
     SeriesOverviewComponent,
     SeriesListComponent,
     SeriesFormComponent,
-    FrontpageComponent,
+    WebOverviewComponent,
     WebListComponent,
+    WebFormComponent, 
     TagFormComponent, 
-    WebFormComponent
+    TagListComponent
   ],
   imports: [
     BrowserModule,

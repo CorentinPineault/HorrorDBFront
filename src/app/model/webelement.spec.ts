@@ -1,7 +1,7 @@
-import { Webelement } from './webelement';
+import { WebElement } from './webelement';
 
-describe('Webelement', () => {
+describe('WebElement', () => {
   it('should create an instance', () => {
-    expect(new Webelement()).toBeTruthy();
+    expect(new WebElement()).toBeTruthy();
   });
 });

@@ -64,13 +64,24 @@
       </div>
       <div [hidden]="!link.pristine" class="alert alert-danger">Le lien est obligatoire</div>
 
+      <div class="form-group">
+        <label for="link">Nombre d'épisodes</label>
+        <input
+          type="number"
+          class="form-control"
+          id="nbEpisodes"
+          required #nbEpisodes="ngModel"
+          [(ngModel)]="ws.nbEpisodes"
+          name="nbEpisodes"
+        />
+      </div>
+      <div [hidden]="!nbEpisodes.pristine" class="alert alert-danger">Le nombre d'épisodes est obligatoire</div>
 
       <button (click)="addWebSeries()" class="btn btn-success">Submit</button>
     </div>
 
     <div *ngIf="submitted">
       <h4>Série web ajouté avec succès</h4>
-      <button class="btn btn-success" (click)="newWebSeries()">Add</button>
     </div>
   </div>
 </div>

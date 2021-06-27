@@ -13,7 +13,8 @@ export class SeriesFormComponent implements OnInit {
     desc: '',
     startDate: undefined,
     endDate: undefined,
-    link: ''
+    link: '',
+    nbEpisodes: 0
   }
   submitted = false;
 
@@ -28,7 +29,8 @@ export class SeriesFormComponent implements OnInit {
       desc: this.ws.desc,
       startDate: this.ws.startDate,
       endDate: this.ws.endDate,
-      link: this.ws.link
+      link: this.ws.link,
+      nbEpisodes: this.ws.nbEpisodes
     };
 
     this.wsService.save(data)
@@ -49,7 +51,8 @@ export class SeriesFormComponent implements OnInit {
       desc: '',
       startDate: undefined,
       endDate: undefined,
-      link: ''
+      link: '',
+      nbEpisodes: 0
     };
   }
 
