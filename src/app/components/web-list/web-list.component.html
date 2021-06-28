@@ -41,9 +41,10 @@
           {{ currentWeb.desc }}
         </div>
   
-        <a class="badge bg-primary" routerLink="/weblist/{{ currentWeb.id }}">
-          Edit
-        </a>
+        <button type="button" class="btn btn-primary" routerLink="/weblist/{{ currentWeb.id }}">
+            Détails
+        </button>
+
       </div>
   
       <div *ngIf="!currentWeb">
